@@ -42,6 +42,7 @@ export default function Home() {
               src={heroImage} 
               alt="Digital Landscape" 
               className="w-full h-full object-cover opacity-40"
+              fetchPriority="high"
             />
           </div>
 
@@ -164,6 +165,9 @@ export default function Home() {
                       src={aiImage} 
                       alt="IA Générative" 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="400"
+                      height="300"
                     />
                     <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
                       Productivité
@@ -203,6 +207,9 @@ export default function Home() {
                       src={strategyImage} 
                       alt="Transformation Digitale" 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="400"
+                      height="300"
                     />
                     <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
                       Stratégie
@@ -241,6 +248,9 @@ export default function Home() {
                     src={uxImage} 
                     alt="UX Design" 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    loading="lazy"
+                    width="400"
+                    height="300"
                   />
                   <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
                     Design

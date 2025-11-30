@@ -31,6 +31,7 @@ export default function Article1() {
               src={articleHero} 
               alt="Digitalisation vs Transformation Digitale" 
               className="w-full h-full object-cover"
+              fetchPriority="high"
             />
           </div>
           
@@ -143,7 +144,12 @@ export default function Article1() {
                   </div>
                   
                   <div className="relative h-48 rounded-xl overflow-hidden mt-6">
-                    <img src={engineImage} alt="Optimisation Digitale" className="w-full h-full object-cover" />
+                    <img 
+                      src={engineImage} 
+                      alt="Optimisation Digitale" 
+                      className="w-full h-full object-cover" 
+                      loading="lazy"
+                    />
                     <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
                       <Badge className="text-lg py-1 px-4 bg-white/90 text-black backdrop-blur-md">Tactique d'efficacité</Badge>
                     </div>
@@ -189,7 +195,12 @@ export default function Article1() {
                    </Card>
                 </div>
 
-                <img src={transformationImage} alt="Transformation Digitale" className="w-full h-64 object-cover rounded-2xl shadow-md my-6" />
+                <img 
+                  src={transformationImage} 
+                  alt="Transformation Digitale" 
+                  className="w-full h-64 object-cover rounded-2xl shadow-md my-6" 
+                  loading="lazy"
+                />
               </motion.section>
 
               {/* Comparison Table */}

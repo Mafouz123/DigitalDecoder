@@ -57,6 +57,7 @@ export default function About() {
               src={aboutImage} 
               alt="Creative Workspace" 
               className="w-full h-full object-cover opacity-20"
+              fetchPriority="high"
             />
           </div>
 

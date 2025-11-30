@@ -33,6 +33,7 @@ export default function Article2() {
               src={articleHero} 
               alt="L'IA en 30 minutes par jour" 
               className="w-full h-full object-cover"
+              fetchPriority="high"
             />
           </div>
           
@@ -128,7 +129,12 @@ export default function Article2() {
                     </div>
                   </div>
                   <div className="relative h-64 rounded-xl overflow-hidden shadow-lg group">
-                     <img src={collaborationImage} alt="Collaboration Humain-Robot" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                     <img 
+                        src={collaborationImage} 
+                        alt="Collaboration Humain-Robot" 
+                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" 
+                        loading="lazy"
+                     />
                      <div className="absolute inset-0 bg-linear-to-t from-black/60 to-transparent flex items-end p-4">
                         <p className="text-white font-medium">Collaboration Humain-IA</p>
                      </div>
@@ -154,7 +160,12 @@ export default function Article2() {
                 {/* Auto 1 */}
                 <div className="bg-background border border-border rounded-2xl overflow-hidden shadow-xs">
                    <div className="relative h-48 overflow-hidden">
-                      <img src={synthesisImage} alt="Synthèse Intelligente" className="w-full h-full object-cover opacity-90" />
+                      <img 
+                        src={synthesisImage} 
+                        alt="Synthèse Intelligente" 
+                        className="w-full h-full object-cover opacity-90" 
+                        loading="lazy"
+                      />
                       <div className="absolute top-4 left-4">
                          <Badge className="bg-white text-primary hover:bg-white/90 font-bold">Gain : 3h / semaine</Badge>
                       </div>
@@ -187,7 +198,12 @@ export default function Article2() {
                 {/* Auto 2 */}
                 <div className="bg-background border border-border rounded-2xl overflow-hidden shadow-xs">
                    <div className="relative h-48 overflow-hidden">
-                      <img src={contentImage} alt="Génération de Contenu" className="w-full h-full object-cover opacity-90" />
+                      <img 
+                        src={contentImage} 
+                        alt="Génération de Contenu" 
+                        className="w-full h-full object-cover opacity-90" 
+                        loading="lazy"
+                      />
                       <div className="absolute top-4 left-4">
                          <Badge className="bg-white text-primary hover:bg-white/90 font-bold">Gain : 5h / semaine</Badge>
                       </div>
@@ -220,7 +236,12 @@ export default function Article2() {
                 {/* Auto 3 */}
                 <div className="bg-background border border-border rounded-2xl overflow-hidden shadow-xs">
                    <div className="relative h-48 overflow-hidden">
-                      <img src={classificationImage} alt="Classification de données" className="w-full h-full object-cover opacity-90" />
+                      <img 
+                        src={classificationImage} 
+                        alt="Classification de données" 
+                        className="w-full h-full object-cover opacity-90" 
+                        loading="lazy"
+                      />
                       <div className="absolute top-4 left-4">
                          <Badge className="bg-white text-primary hover:bg-white/90 font-bold">Gain : 2h / semaine</Badge>
                       </div>
