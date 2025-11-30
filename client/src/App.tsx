@@ -9,6 +9,7 @@ import Contact from "@/pages/contact";
 import About from "@/pages/about";
 import Article1 from "@/pages/articles/digitalisation-vs-transformation";
 import Article2 from "@/pages/articles/ia-30-min";
+import Article3 from "@/pages/articles/vibe-coding";
 
 function Router() {
   return (
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/about" component={About} />
       <Route path="/articles/digitalisation-vs-transformation" component={Article1} />
       <Route path="/articles/ia-30-min" component={Article2} />
+      <Route path="/articles/vibe-coding" component={Article3} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -235,44 +235,46 @@ export default function Home() {
               </Link>
 
               {/* Article 3 */}
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-                className="group cursor-pointer"
-              >
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
-                  <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
-                  <img 
-                    src={uxImage} 
-                    alt="UX Design" 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                    loading="lazy"
-                    width="400"
-                    height="300"
-                  />
-                  <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
-                    Design
-                  </Badge>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <span>25 Nov 2025</span>
-                    <span>•</span>
-                    <span>4 min de lecture</span>
+              <Link href="/articles/vibe-coding">
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                  className="group cursor-pointer"
+                >
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
+                    <img 
+                      src={uxImage} 
+                      alt="Vibe Coding" 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="400"
+                      height="300"
+                    />
+                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
+                      Tendance
+                    </Badge>
                   </div>
-                  <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">
-                    UX Design : Au-delà de l'esthétique
-                  </h3>
-                  <p className="text-muted-foreground line-clamp-3">
-                    Pourquoi l'expérience utilisateur est le facteur clé de succès de votre produit numérique, et comment l'améliorer.
-                  </p>
-                  <div className="pt-2 flex items-center text-primary font-medium">
-                    Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span>25 Nov 2025</span>
+                      <span>•</span>
+                      <span>4 min de lecture</span>
+                    </div>
+                    <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">
+                      Vibe Coding : Quand l'IA donne le « La » de la Programmation
+                    </h3>
+                    <p className="text-muted-foreground line-clamp-3">
+                      Oubliez la tête baissée dans le code. Le Vibe Coding est la nouvelle approche où l'intuition guide la création logicielle assistée par IA.
+                    </p>
+                    <div className="pt-2 flex items-center text-primary font-medium">
+                      Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </div>
                   </div>
-                </div>
-              </motion.div>
+                </motion.div>
+              </Link>
             </div>
           </div>
         </section>
