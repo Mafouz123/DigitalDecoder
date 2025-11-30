@@ -326,7 +326,9 @@ export default function Article2() {
                    <p className="text-sm text-muted-foreground italic">
                      "Je vous aide à naviguer dans la complexité du digital pour en tirer le meilleur."
                    </p>
-                   <Button variant="outline" className="w-full rounded-full">Suivre sur LinkedIn</Button>
+                   <a href="https://www.linkedin.com/in/mafouz-sanni-98704b393?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer">
+                     <Button variant="outline" className="w-full rounded-full">Suivre sur LinkedIn</Button>
+                   </a>
                 </CardContent>
               </Card>
 
