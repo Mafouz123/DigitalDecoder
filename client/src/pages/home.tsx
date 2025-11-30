@@ -151,40 +151,42 @@ export default function Home() {
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
               {/* Article 1 */}
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                className="group cursor-pointer"
-              >
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
-                  <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
-                  <img 
-                    src={aiImage} 
-                    alt="IA Générative" 
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                  />
-                  <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
-                    Intelligence Artificielle
-                  </Badge>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <span>30 Nov 2025</span>
-                    <span>•</span>
-                    <span>5 min de lecture</span>
+              <Link href="/articles/ia-30-min">
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="group cursor-pointer"
+                >
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
+                    <img 
+                      src={aiImage} 
+                      alt="IA Générative" 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
+                      Intelligence Artificielle
+                    </Badge>
                   </div>
-                  <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">
-                    L'IA générative au quotidien : Guide pratique
-                  </h3>
-                  <p className="text-muted-foreground line-clamp-3">
-                    Comment intégrer ChatGPT, Midjourney et autres outils dans votre flux de travail sans perdre votre touche humaine.
-                  </p>
-                  <div className="pt-2 flex items-center text-primary font-medium">
-                    Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span>30 Nov 2025</span>
+                      <span>•</span>
+                      <span>5 min de lecture</span>
+                    </div>
+                    <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">
+                      L'IA générative au quotidien : Guide pratique
+                    </h3>
+                    <p className="text-muted-foreground line-clamp-3">
+                      Comment intégrer ChatGPT, Midjourney et autres outils dans votre flux de travail sans perdre votre touche humaine.
+                    </p>
+                    <div className="pt-2 flex items-center text-primary font-medium">
+                      Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </div>
                   </div>
-                </div>
-              </motion.div>
+                </motion.div>
+              </Link>
 
               {/* Article 2 */}
               <Link href="/articles/digitalisation-vs-transformation">
