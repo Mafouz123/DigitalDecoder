@@ -279,44 +279,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Newsletter Section */}
-        <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-             <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-                  <path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" strokeWidth="1"/>
-                </pattern>
-              </defs>
-              <rect width="100%" height="100%" fill="url(#grid)" />
-            </svg>
-          </div>
-          
-          <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
-            <div className="max-w-2xl mx-auto space-y-8">
-              <h2 className="text-4xl md:text-5xl font-heading font-bold tracking-tight">
-                Restez à la pointe du digital
-              </h2>
-              <p className="text-primary-foreground/80 text-lg">
-                Recevez chaque semaine nos meilleures astuces, tutoriels et analyses directement dans votre boîte mail.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
-                <Input 
-                  type="email" 
-                  placeholder="votre@email.com" 
-                  className="bg-white/10 border-white/20 text-white placeholder:text-white/60 h-12 rounded-full px-6 focus-visible:ring-white focus-visible:border-white"
-                />
-                <Button size="lg" variant="secondary" className="h-12 px-8 rounded-full font-bold text-primary hover:bg-white">
-                  S'inscrire
-                </Button>
-              </div>
-              <p className="text-sm text-primary-foreground/60">
-                Pas de spam. Désabonnement en un clic.
-              </p>
-            </div>
-          </div>
-        </section>
       </main>
 
       <footer className="bg-background border-t py-12">
