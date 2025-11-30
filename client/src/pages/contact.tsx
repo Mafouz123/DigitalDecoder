@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useLocation } from "wouter";
-import { Mail, MessageCircle, Send, ExternalLink } from "lucide-react";
+import { Mail, MessageCircle, Send, ExternalLink, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -96,6 +96,26 @@ export default function Contact() {
                     <div>
                       <h3 className="font-bold group-hover:text-primary transition-colors">Rejoindre la chaîne WhatsApp</h3>
                       <p className="text-muted-foreground">Pour les dernières actus et astuces</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </a>
+
+              {/* LinkedIn Card */}
+              <a 
+                href="https://www.linkedin.com/in/mafouz-sanni-98704b393?utm_source=share_via&utm_content=profile&utm_medium=member_ios" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Card className="bg-secondary/50 border-none shadow-sm hover:bg-secondary transition-colors group cursor-pointer">
+                  <CardContent className="p-6 flex items-center gap-4">
+                    <div className="h-12 w-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-600 shrink-0 group-hover:scale-110 transition-transform">
+                      <Linkedin className="h-6 w-6" />
+                    </div>
+                    <div>
+                      <h3 className="font-bold group-hover:text-primary transition-colors">Me contacter sur LinkedIn</h3>
+                      <p className="text-muted-foreground">Pour des discussions professionnelles</p>
                     </div>
                   </CardContent>
                 </Card>
