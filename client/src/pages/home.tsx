@@ -358,9 +358,9 @@ export default function Home() {
           
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
             <p>© 2025 Décoder le digital. Tous droits réservés.</p>
-            <div className="flex gap-4">
-              <a href="#" className="hover:text-primary">Twitter</a>
-              <a href="#" className="hover:text-primary">LinkedIn</a>
+            <div className="flex gap-6">
+              <a href="https://wa.me/22991177723" target="_blank" rel="noopener noreferrer" className="hover:text-primary">WhatsApp</a>
+              <a href="https://www.linkedin.com/in/mafouz-sanni-98704b393?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" className="hover:text-primary">LinkedIn</a>
               <a href="#" className="hover:text-primary">Instagram</a>
             </div>
           </div>
