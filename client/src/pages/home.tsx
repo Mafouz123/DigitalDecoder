@@ -344,14 +344,6 @@ export default function Home() {
               </ul>
             </div>
             
-            <div>
-              <h4 className="font-bold mb-4">Légal</h4>
-              <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary">Mentions légales</a></li>
-                <li><a href="#" className="hover:text-primary">Confidentialité</a></li>
-                <li><Link href="/contact" className="hover:text-primary">Contact</Link></li>
-              </ul>
-            </div>
           </div>
           
           <Separator className="mb-8" />
