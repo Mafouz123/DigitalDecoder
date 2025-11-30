@@ -1,16 +1,17 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { ArrowRight, Cpu, Lightbulb, Rocket, BookOpen, Menu, Search } from "lucide-react";
+import { ArrowRight, Cpu, Lightbulb, Rocket, BookOpen } from "lucide-react";
 import heroImage from "@assets/generated_images/abstract_digital_landscape_for_blog_hero.png";
 import aiImage from "@assets/generated_images/ai_brain_concept_for_article_thumbnail.png";
 import strategyImage from "@assets/generated_images/digital_strategy_concept_for_article_thumbnail.png";
 import uxImage from "@assets/generated_images/ux_design_abstract_for_article_thumbnail.png";
 
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
+import { Navbar } from "@/components/navbar";
 
 export default function Home() {
   const fadeIn = {
@@ -30,33 +31,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background font-sans selection:bg-primary/20">
       {/* Navigation */}
-      <nav className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-md">
-        <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
-          <div className="flex items-center gap-2 font-heading font-bold text-xl tracking-tighter">
-            <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center text-white">
-              D
-            </div>
-            <span>Décoder le digital</span>
-          </div>
-          
-          <div className="hidden md:flex items-center gap-8 text-sm font-medium text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">Articles</a>
-            <a href="#" className="hover:text-primary transition-colors">Tutoriels</a>
-            <a href="#" className="hover:text-primary transition-colors">Stratégie</a>
-            <a href="#" className="hover:text-primary transition-colors">À propos</a>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="hidden md:flex">
-              <Search className="h-5 w-5" />
-            </Button>
-            <Button className="hidden md:flex rounded-full font-semibold">S'abonner</Button>
-            <Button variant="ghost" size="icon" className="md:hidden">
-              <Menu className="h-6 w-6" />
-            </Button>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       <main>
         {/* Hero Section */}
@@ -358,7 +333,7 @@ export default function Home() {
               <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="#" className="hover:text-primary">Mentions légales</a></li>
                 <li><a href="#" className="hover:text-primary">Confidentialité</a></li>
-                <li><a href="#" className="hover:text-primary">Contact</a></li>
+                <li><Link href="/contact" className="hover:text-primary">Contact</Link></li>
               </ul>
             </div>
           </div>
