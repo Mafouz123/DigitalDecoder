@@ -54,17 +54,17 @@ export default function Article2() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Gagnez 10 heures par semaine</span>
               </h1>
               
-              <div className="flex items-center gap-6 text-white/80 text-sm md:text-base font-medium">
-                <div className="flex items-center gap-2">
-                  <User className="w-4 h-4" />
-                  <span>Par SANNI ALIDOU Mafouzou</span>
+              <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 bg-white/15 backdrop-blur-md rounded-lg p-4 border border-white/20">
+                <div className="flex items-center gap-2 text-white font-semibold text-base md:text-lg">
+                  <User className="w-5 h-5" />
+                  <span>SANNI ALIDOU Mafouzou</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Clock className="w-4 h-4" />
-                  <span>5 min de lecture</span>
+                <div className="flex items-center gap-2 text-white font-semibold text-base md:text-lg">
+                  <Clock className="w-5 h-5" />
+                  <span>5 min</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Tag className="w-4 h-4" />
+                <div className="flex items-center gap-2 text-white font-semibold text-base md:text-lg">
+                  <Tag className="w-5 h-5" />
                   <span>30 Nov 2025</span>
                 </div>
               </div>
