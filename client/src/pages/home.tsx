@@ -166,7 +166,7 @@ export default function Home() {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                     <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
-                      Intelligence Artificielle
+                      Productivité
                     </Badge>
                   </div>
                   <div className="space-y-3">
@@ -176,10 +176,10 @@ export default function Home() {
                       <span>5 min de lecture</span>
                     </div>
                     <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">
-                      L'IA générative au quotidien : Guide pratique
+                      L'IA en 30 minutes par jour : Gagnez 10 heures par semaine
                     </h3>
                     <p className="text-muted-foreground line-clamp-3">
-                      Comment intégrer ChatGPT, Midjourney et autres outils dans votre flux de travail sans perdre votre touche humaine.
+                      Les 3 automatisations simples (sans coder) qui vont transformer votre productivité. Imaginez pouvoir vous libérer de 10 heures de travail répétitif chaque semaine.
                     </p>
                     <div className="pt-2 flex items-center text-primary font-medium">
                       Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
