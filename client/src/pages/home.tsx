@@ -5,6 +5,7 @@ import heroImage from "@assets/generated_images/abstract_digital_landscape_for_b
 import aiImage from "@assets/generated_images/ai_brain_concept_for_article_thumbnail.png";
 import strategyImage from "@assets/generated_images/digital_strategy_concept_for_article_thumbnail.png";
 import uxImage from "@assets/generated_images/ux_design_abstract_for_article_thumbnail.png";
+import talentImage from "@assets/generated_images/young_developers_collaborating_on_digital_project.png";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -150,13 +151,55 @@ export default function Home() {
               <Button variant="outline" className="rounded-full">Voir tous les articles <ArrowRight className="ml-2 h-4 w-4"/></Button>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+              {/* Article 0 - Featured */}
+              <Link href="/articles/trusted-young-talent">
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="group cursor-pointer lg:col-span-2 lg:row-span-2"
+                >
+                  <div className="relative aspect-[16/10] rounded-2xl overflow-hidden mb-6 shadow-lg">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
+                    <img 
+                      src={talentImage} 
+                      alt="Faire confiance aux jeunes développeurs" 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="600"
+                      height="375"
+                    />
+                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
+                      Ressources Humaines
+                    </Badge>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span>01 Déc 2025</span>
+                      <span>•</span>
+                      <span>8 min de lecture</span>
+                    </div>
+                    <h3 className="text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors">
+                      La confiance envers les jeunes développeurs : L'atout stratégique du futur
+                    </h3>
+                    <p className="text-muted-foreground line-clamp-4">
+                      Pourquoi les entreprises et recruteurs doivent absolument investir dans les jeunes talents en développement web et design. Guide complet avec stratégie d'intégration.
+                    </p>
+                    <div className="pt-2 flex items-center text-primary font-medium">
+                      Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
+
               {/* Article 1 */}
               <Link href="/articles/ia-30-min">
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
                   className="group cursor-pointer"
                 >
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
@@ -198,7 +241,7 @@ export default function Home() {
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 0.1 }}
+                  transition={{ delay: 0.2 }}
                   className="group cursor-pointer"
                 >
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
@@ -240,7 +283,7 @@ export default function Home() {
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 0.2 }}
+                  transition={{ delay: 0.3 }}
                   className="group cursor-pointer"
                 >
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
