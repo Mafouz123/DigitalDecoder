@@ -49,7 +49,7 @@ export default function Article3() {
               
               <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-6 leading-tight shadow-black/50 drop-shadow-lg">
                 Vibe Coding : <br className="hidden md:block" />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">Quand l'IA donne le « La » de la Programmation</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-purple-200" style={{textShadow: '0 2px 10px rgba(0,0,0,0.8), 0 4px 20px rgba(0,0,0,0.6)'}}>Quand l'IA donne le « La » de la Programmation</span>
               </h1>
               
               <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 bg-purple-600/25 backdrop-blur-md rounded-lg p-4 border border-purple-400/30">
