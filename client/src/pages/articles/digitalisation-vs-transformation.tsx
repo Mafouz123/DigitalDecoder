@@ -52,7 +52,7 @@ export default function Article1() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">La Différence Qui Change Tout</span>
               </h1>
               
-              <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 bg-white/15 backdrop-blur-md rounded-lg p-4 border border-white/20">
+              <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 bg-purple-600/25 backdrop-blur-md rounded-lg p-4 border border-purple-400/30">
                 <div className="flex items-center gap-2 text-white font-semibold text-base md:text-lg">
                   <User className="w-5 h-5" />
                   <span>SANNI ALIDOU Mafouzou</span>
