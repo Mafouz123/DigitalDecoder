@@ -6,6 +6,12 @@ import aiImage from "@assets/generated_images/ai_brain_concept_for_article_thumb
 import strategyImage from "@assets/generated_images/digital_strategy_concept_for_article_thumbnail.png";
 import uxImage from "@assets/generated_images/ux_design_abstract_for_article_thumbnail.png";
 import talentImage from "@assets/generated_images/young_developers_collaborating_on_digital_project.png";
+import pagespeedImage from "@assets/generated_images/pagespeed_performance_metrics_visualization.png";
+import googleadsImage from "@assets/generated_images/ai_automation_for_digital_marketing.png";
+import corevitalsImage from "@assets/generated_images/core_web_vitals_optimization_guide.png";
+import googleadsAdsImage from "@assets/generated_images/ai-powered_google_ads_campaigns.png";
+import screamingfrogImage from "@assets/generated_images/seo_spider_crawler_analysis.png";
+import seoStrategyImage from "@assets/generated_images/seo_strategy_guide_concept.png";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -151,8 +157,49 @@ export default function Home() {
               <Button variant="outline" className="rounded-full">Voir tous les articles <ArrowRight className="ml-2 h-4 w-4"/></Button>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-6 gap-8">
               {/* Article 0 - Featured */}
+              <Link href="/articles/google-pagespeed-insights">
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="group cursor-pointer lg:col-span-2 lg:row-span-2"
+                >
+                  <div className="relative aspect-[16/10] rounded-2xl overflow-hidden mb-6 shadow-lg">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
+                    <img 
+                      src={pagespeedImage} 
+                      alt="Google PageSpeed Insights" 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="600"
+                      height="375"
+                    />
+                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
+                      SEO 2026
+                    </Badge>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span>23 Déc 2025</span>
+                      <span>•</span>
+                      <span>8 min de lecture</span>
+                    </div>
+                    <h3 className="text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors">
+                      Au-delà du score 100 : L'INP, votre priorité SEO en 2026
+                    </h3>
+                    <p className="text-muted-foreground line-clamp-4">
+                      Comment optimiser votre site avec l'Interaction to Next Paint et le Green SEO. PageSpeed Insights n'est plus sur la vitesse brute, mais sur la fluidité ressentie.
+                    </p>
+                    <div className="pt-2 flex items-center text-primary font-medium">
+                      Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
+
+              {/* New Featured Article */}
               <Link href="/articles/trusted-young-talent">
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}
@@ -314,6 +361,229 @@ export default function Home() {
                     </p>
                     <div className="pt-2 flex items-center text-primary font-medium">
                       Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
+
+              {/* Article 5 - New */}
+              <Link href="/articles/google-ads-ia-2026">
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4 }}
+                  className="group cursor-pointer"
+                >
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
+                    <img 
+                      src={googleadsImage} 
+                      alt="Google Ads et IA" 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="400"
+                      height="300"
+                    />
+                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
+                      Marketing IA
+                    </Badge>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span>23 Déc 2025</span>
+                      <span>•</span>
+                      <span>10 min de lecture</span>
+                    </div>
+                    <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">
+                      L'ère de l'autonomie : Maîtriser l'IA de Google Ads en 2026
+                    </h3>
+                    <p className="text-muted-foreground line-clamp-3">
+                      Comment piloter l'IA Google Ads avec first-party data et Performance Max, tout en garantissant votre Brand Safety.
+                    </p>
+                    <div className="pt-2 flex items-center text-primary font-medium">
+                      Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Tutorials Section */}
+        <section className="py-24 bg-secondary/30">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="flex flex-col md:flex-row items-end justify-between mb-12 gap-4">
+              <div>
+                <h2 className="text-4xl font-heading font-bold mb-4">Tutoriels Pratiques</h2>
+                <p className="text-muted-foreground text-lg">Apprenez en faisait avec nos guides pratiques étape par étape.</p>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* Tutorial 1 */}
+              <Link href="/tutorials/pagespeed-corevitalweb">
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="group cursor-pointer h-full"
+                >
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
+                    <img 
+                      src={corevitalsImage} 
+                      alt="Core Web Vitals" 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="400"
+                      height="300"
+                    />
+                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
+                      SEO
+                    </Badge>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span>Tutoriel</span>
+                      <span>•</span>
+                      <span>15 min</span>
+                    </div>
+                    <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
+                      PageSpeed Insights & Core Web Vitals 2026
+                    </h3>
+                    <p className="text-muted-foreground line-clamp-2 text-sm">
+                      Optimisez votre site pour l'INP et les Core Web Vitals.
+                    </p>
+                    <div className="pt-2 flex items-center text-primary font-medium text-sm">
+                      Voir le tutoriel <ArrowRight className="ml-2 w-3 h-3 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
+
+              {/* Tutorial 2 */}
+              <Link href="/tutorials/google-ads-ia">
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                  className="group cursor-pointer h-full"
+                >
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
+                    <img 
+                      src={googleadsAdsImage} 
+                      alt="Google Ads IA" 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="400"
+                      height="300"
+                    />
+                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
+                      Marketing
+                    </Badge>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span>Tutoriel</span>
+                      <span>•</span>
+                      <span>20 min</span>
+                    </div>
+                    <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
+                      Google Ads & IA générative 2026
+                    </h3>
+                    <p className="text-muted-foreground line-clamp-2 text-sm">
+                      Maîtrisez Performance Max avec l'IA et first-party data.
+                    </p>
+                    <div className="pt-2 flex items-center text-primary font-medium text-sm">
+                      Voir le tutoriel <ArrowRight className="ml-2 w-3 h-3 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
+
+              {/* Tutorial 3 */}
+              <Link href="/tutorials/screaming-frog-seo">
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.2 }}
+                  className="group cursor-pointer h-full"
+                >
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
+                    <img 
+                      src={screamingfrogImage} 
+                      alt="Screaming Frog" 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="400"
+                      height="300"
+                    />
+                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
+                      SEO Technique
+                    </Badge>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span>Tutoriel</span>
+                      <span>•</span>
+                      <span>25 min</span>
+                    </div>
+                    <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
+                      Screaming Frog & Analyse IA
+                    </h3>
+                    <p className="text-muted-foreground line-clamp-2 text-sm">
+                      Crawl avancé et insights stratégiques avec l'IA.
+                    </p>
+                    <div className="pt-2 flex items-center text-primary font-medium text-sm">
+                      Voir le tutoriel <ArrowRight className="ml-2 w-3 h-3 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
+
+              {/* Tutorial 4 */}
+              <Link href="/tutorials/seo-strategy">
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 }}
+                  className="group cursor-pointer h-full"
+                >
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
+                    <img 
+                      src={seoStrategyImage} 
+                      alt="Stratégie SEO" 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="400"
+                      height="300"
+                    />
+                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
+                      Stratégie
+                    </Badge>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span>Tutoriel</span>
+                      <span>•</span>
+                      <span>12 min</span>
+                    </div>
+                    <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
+                      Stratégie SEO Complète
+                    </h3>
+                    <p className="text-muted-foreground line-clamp-2 text-sm">
+                      La feuille de route complète pour dominer la recherche organique.
+                    </p>
+                    <div className="pt-2 flex items-center text-primary font-medium text-sm">
+                      Voir le tutoriel <ArrowRight className="ml-2 w-3 h-3 transition-transform group-hover:translate-x-1" />
                     </div>
                   </div>
                 </motion.div>
