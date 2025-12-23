@@ -1,0 +1,57 @@
+ 
+* Voici les instructions :
+Tu vas créer 2 articles et 3 tutoriels pour le blog sur la base de ces exemples ci-dessous. Ajoute les articles dans les articles et les tutoriels dans les tutoriels. Transformer les contenus de ces exemplaires et Modifier les titres de chaque article et tutoriels avant de commencer.
+- Ajoute des images, graphiques accrocheurs pour la mise en page de chaque article et tutoriels et ne déborde pas l’écran. On accès à tout les articles et tutoriels depuis le menu.
+- dans le menu supprimé ( abonnez vous)
+- Verriez que les pages sont ultra rapides pour les chargement et vérifier la stratégie SEO.
+
+Article 1 — Google PageSpeed Insights
+Titre suggéré : « Au-delà du score 100 : Pourquoi l'Interaction to Next Paint (INP) sera votre priorité SEO en 2026 »
+L'angle de l'article :
+En 2026, la simple vitesse de chargement (LCP) ne suffit plus. Google a définitivement remplacé le FID par l'INP (Interaction to Next Paint) comme métrique reine de l'interactivité. L'article doit expliquer que PageSpeed Insights n'est plus un outil de "performance brute", mais un outil de "fluidité ressentie".
+Les points clés à développer :
+• La domination de l'INP : Expliquer comment l'optimisation du JavaScript est devenue le plus gros défi technique, car les utilisateurs saturent les navigateurs avec des scripts tiers.
+• L'impact de l'IA sur le rendu : Comment les sites utilisant des interfaces génératives (chatbots, outils de personnalisation en temps réel) peuvent plomber leur score PSI s'ils ne sont pas optimisés.
+• Vitesse et écologie (Green SEO) : L'émergence de scores liés à l'efficacité énergétique des pages, une tendance forte pour 2026 où la légèreté du code devient un argument de marque.
+Article 2 — Google Ads
+Titre suggéré : « L’ère de l’autonomie : Comment piloter l’IA de Google Ads sans perdre le contrôle de votre budget en 2026 »
+L'angle de l'article :
+En 2026, Google Ads a basculé vers une "automatisation presque totale". Les mots-clés traditionnels perdent de leur importance au profit de l'intention prédictive et des campagnes Performance Max ultra-évoluées. L'article doit montrer que le rôle du marketeur a muté : il n'est plus un "gestionnaire d'enchères", mais un "stratège de données".
+Les points clés à développer :
+• La fin des mots-clés exacts : Expliquer comment l'IA comprend désormais le contexte sémantique (Search Generative Experience) plutôt que les termes précis.
+• La guerre de la "First-Party Data" : Avec la fin des cookies tiers totalement actée, comment utiliser vos propres données clients pour "nourrir" l'algorithme Google.
+• L'IA générative de créas : Comment Google Ads génère désormais des vidéos et visuels à la volée, et pourquoi le rôle de l'humain est devenu crucial pour garantir la cohérence de la marque (le "Brand Safety").
+
+
+Tutoriel 1 : Google PageSpeed Insights & Core Web Vitals 2026
+
+• Objectif : Apprendre à optimiser la vitesse et l’expérience utilisateur en tenant compte des nouvelles métriques Core Web Vitals (Interaction to Next Paint, Responsiveness, etc.).
+• Contenu :• Comprendre les évolutions des métriques Google en 2026.
+• Tutoriel pratique : audit d’un site avec PageSpeed Insights.
+• Mise en place d’optimisations (lazy loading, compression, CDN, code splitting).
+
+• Impact : Les lecteurs sauront adapter leurs sites aux critères de performance qui influencent directement le SEO et l’expérience utilisateur.
+
+
+---
+
+🎯 Tutoriel 2 : Google Ads & IA générative pour campagnes 2026
+
+• Objectif : Former les lecteurs à utiliser les nouvelles fonctionnalités d’IA intégrées dans Google Ads (création automatique de visuels, textes, ciblage prédictif).
+• Contenu :• Paramétrer une campagne avec les outils d’automatisation avancés.
+• Exploiter l’IA pour générer des annonces adaptées aux audiences.
+• Suivi et optimisation avec les nouveaux dashboards prédictifs.
+
+• Impact : Les marketeurs apprendront à gagner du temps et à maximiser leur ROI grâce à l’automatisation intelligente.
+
+
+---
+
+🔍 Tutoriel 3 : Screaming Frog SEO Spider & Analyse IA
+
+• Objectif : Utiliser Screaming Frog non seulement pour crawler, mais aussi pour connecter l’outil à des modèles d’IA afin d’obtenir des insights stratégiques.
+• Contenu :• Paramétrer un crawl avancé (JavaScript, API, mobile-first).
+• Exporter les données et les analyser avec un modèle IA (détection d’opportunités SEO, clustering de contenu).
+• Automatiser la détection d’erreurs et la priorisation des corrections.
+
+• Impact : Les lecteurs comprendront comment transformer un simple audit technique en stratégie SEO prédictive et automatisée.
