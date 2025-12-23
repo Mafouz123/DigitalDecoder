@@ -50,7 +50,6 @@ export function Navbar() {
           <Button variant="ghost" size="icon" className="hidden md:flex">
             <Search className="h-5 w-5" />
           </Button>
-          <Button className="hidden md:flex rounded-full font-semibold">S'abonner</Button>
           
           {/* Mobile Menu */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -94,7 +93,6 @@ export function Navbar() {
                   )
                 ))}
                 <div className="h-px bg-border my-2" />
-                <Button className="w-full rounded-full font-semibold">S'abonner</Button>
               </div>
             </SheetContent>
           </Sheet>

@@ -11,7 +11,12 @@ import Article1 from "@/pages/articles/digitalisation-vs-transformation";
 import Article2 from "@/pages/articles/ia-30-min";
 import Article3 from "@/pages/articles/vibe-coding";
 import Article4 from "@/pages/articles/trusted-young-talent";
+import Article5 from "@/pages/articles/google-pagespeed-insights";
+import Article6 from "@/pages/articles/google-ads-ia-2026";
 import TutorialSEO from "@/pages/tutorials/seo-strategy";
+import TutorialPageSpeed from "@/pages/tutorials/pagespeed-corevitalweb";
+import TutorialGoogleAds from "@/pages/tutorials/google-ads-ia";
+import TutorialScreamingFrog from "@/pages/tutorials/screaming-frog-seo";
 
 function Router() {
   return (
@@ -23,7 +28,12 @@ function Router() {
       <Route path="/articles/ia-30-min" component={Article2} />
       <Route path="/articles/vibe-coding" component={Article3} />
       <Route path="/articles/trusted-young-talent" component={Article4} />
+      <Route path="/articles/google-pagespeed-insights" component={Article5} />
+      <Route path="/articles/google-ads-ia-2026" component={Article6} />
       <Route path="/tutorials/seo-strategy" component={TutorialSEO} />
+      <Route path="/tutorials/pagespeed-corevitalweb" component={TutorialPageSpeed} />
+      <Route path="/tutorials/google-ads-ia" component={TutorialGoogleAds} />
+      <Route path="/tutorials/screaming-frog-seo" component={TutorialScreamingFrog} />
       <Route component={NotFound} />
     </Switch>
   );
