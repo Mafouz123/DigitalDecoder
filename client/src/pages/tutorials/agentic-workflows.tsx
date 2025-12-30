@@ -21,50 +21,46 @@ export default function TutorialAgenticWorkflows() {
 
       <main className="pb-20">
         {/* Tutorial Hero */}
-        <section className="relative h-[60vh] min-h-[500px] w-full overflow-hidden">
+        <section className="relative h-[45vh] md:h-[55vh] w-full overflow-hidden bg-background">
           <div className="absolute inset-0 z-0">
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10"></div>
             <img 
               src={tutorialHero} 
               alt="Flux de travail agentiques" 
               className="w-full h-full object-cover"
               fetchPriority="high"
             />
+            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent z-10"></div>
           </div>
           
-          <div className="container mx-auto px-4 md:px-6 relative z-20 h-full flex flex-col justify-end pb-12">
+          <div className="container mx-auto px-4 md:px-6 relative z-20 h-full flex flex-col justify-center">
             <motion.div 
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, x: -30 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
-              className="max-w-4xl"
+              className="max-w-2xl"
             >
-              <div className="flex flex-wrap gap-3 mb-6">
+              <div className="flex flex-wrap gap-3 mb-4">
                 <Badge className="bg-indigo-600 hover:bg-indigo-700 text-white border-none px-3 py-1 text-sm">Tutoriel</Badge>
-                <Badge variant="outline" className="bg-background/20 backdrop-blur-md border-white/20 text-white">IA Avancée</Badge>
+                <Badge variant="outline" className="bg-background/40 backdrop-blur-md border-white/30 text-white">IA Avancée</Badge>
               </div>
               
-              <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-6 leading-tight shadow-black/50 drop-shadow-lg">
-                Comprendre les Flux de Travail <br className="hidden md:block" />
-                Agentiques en Pratique
+              <h1 className="text-3xl md:text-5xl font-heading font-bold text-white mb-4 leading-tight drop-shadow-lg">
+                Flux de Travail Agentiques <br className="hidden md:block" />
+                Pour les Nuls
               </h1>
               
-              <p className="text-xl text-white/90 mb-6 max-w-2xl">
-                Un guide complet et facile à comprendre pour maîtriser les agents IA autonomes
+              <p className="text-lg text-white/95 mb-4 max-w-xl drop-shadow-md">
+                Comprendre comment les agents IA autonomes pensent, agissent et s'améliorent
               </p>
               
-              <div className="flex flex-col md:flex-row items-start md:items-center gap-4 md:gap-6 bg-indigo-600/25 backdrop-blur-md rounded-lg p-4 border border-indigo-400/30">
-                <div className="flex items-center gap-2 text-white font-semibold text-base md:text-lg">
-                  <User className="w-5 h-5" />
-                  <span>Équipe IA Agentic</span>
+              <div className="flex flex-col sm:flex-row items-start gap-3 text-sm text-white/90">
+                <div className="flex items-center gap-2 font-semibold">
+                  <Clock className="w-4 h-4" />
+                  <span>30 min de lecture</span>
                 </div>
-                <div className="flex items-center gap-2 text-white font-semibold text-base md:text-lg">
-                  <Clock className="w-5 h-5" />
-                  <span>30 min</span>
-                </div>
-                <div className="flex items-center gap-2 text-white font-semibold text-base md:text-lg">
-                  <Tag className="w-5 h-5" />
-                  <span>Décembre 2025</span>
+                <div className="flex items-center gap-2 font-semibold">
+                  <User className="w-4 h-4" />
+                  <span>Débutant à Intermédiaire</span>
                 </div>
               </div>
             </motion.div>
