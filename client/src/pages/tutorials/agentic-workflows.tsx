@@ -20,47 +20,51 @@ export default function TutorialAgenticWorkflows() {
       <Navbar />
 
       <main className="pb-20">
-        {/* Tutorial Hero */}
-        <section className="relative h-[45vh] md:h-[55vh] w-full overflow-hidden bg-background">
-          <div className="absolute inset-0 z-0">
-            <img 
-              src={tutorialHero} 
-              alt="Flux de travail agentiques" 
-              className="w-full h-full object-cover"
-              fetchPriority="high"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent z-10"></div>
-          </div>
-          
-          <div className="container mx-auto px-4 md:px-6 relative z-20 h-full flex flex-col justify-center">
+        {/* Tutorial Hero Image - Clean and Clear */}
+        <section className="w-full overflow-hidden bg-background">
+          <img 
+            src={tutorialHero} 
+            alt="Flux de travail agentiques" 
+            className="w-full h-auto object-contain"
+            fetchPriority="high"
+          />
+        </section>
+
+        {/* Tutorial Header Info - Separated */}
+        <section className="bg-background border-b border-primary/10">
+          <div className="container mx-auto px-4 md:px-6 py-12">
             <motion.div 
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-              className="max-w-2xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              className="space-y-6"
             >
-              <div className="flex flex-wrap gap-3 mb-4">
+              <div className="flex flex-wrap gap-3">
                 <Badge className="bg-indigo-600 hover:bg-indigo-700 text-white border-none px-3 py-1 text-sm">Tutoriel</Badge>
-                <Badge variant="outline" className="bg-background/40 backdrop-blur-md border-white/30 text-white">IA Avancée</Badge>
+                <Badge variant="outline" className="border-indigo-300 text-indigo-700 bg-indigo-50 dark:bg-indigo-900/30 dark:text-indigo-300 dark:border-indigo-700">IA Avancée</Badge>
               </div>
               
-              <h1 className="text-3xl md:text-5xl font-heading font-bold text-white mb-4 leading-tight drop-shadow-lg">
+              <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground leading-tight">
                 Flux de Travail Agentiques <br className="hidden md:block" />
                 Pour les Nuls
               </h1>
               
-              <p className="text-lg text-white/95 mb-4 max-w-xl drop-shadow-md">
-                Comprendre comment les agents IA autonomes pensent, agissent et s'améliorent
+              <p className="text-xl text-foreground/80 max-w-2xl leading-relaxed">
+                Comprendre comment les agents IA autonomes pensent, agissent et s'améliorent de manière itérative
               </p>
               
-              <div className="flex flex-col sm:flex-row items-start gap-3 text-sm text-white/90">
+              <div className="flex flex-col sm:flex-row items-start gap-6 text-base text-foreground/70">
                 <div className="flex items-center gap-2 font-semibold">
-                  <Clock className="w-4 h-4" />
+                  <Clock className="w-5 h-5 text-indigo-600" />
                   <span>30 min de lecture</span>
                 </div>
                 <div className="flex items-center gap-2 font-semibold">
-                  <User className="w-4 h-4" />
+                  <User className="w-5 h-5 text-indigo-600" />
                   <span>Débutant à Intermédiaire</span>
+                </div>
+                <div className="flex items-center gap-2 font-semibold">
+                  <Tag className="w-5 h-5 text-indigo-600" />
+                  <span>Décembre 2025</span>
                 </div>
               </div>
             </motion.div>
