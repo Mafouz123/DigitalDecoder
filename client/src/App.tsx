@@ -18,6 +18,7 @@ import TutorialSEO from "@/pages/tutorials/seo-strategy";
 import TutorialPageSpeed from "@/pages/tutorials/pagespeed-corevitalweb";
 import TutorialGoogleAds from "@/pages/tutorials/google-ads-ia";
 import TutorialScreamingFrog from "@/pages/tutorials/screaming-frog-seo";
+import TutorialAgenticWorkflows from "@/pages/tutorials/agentic-workflows";
 
 function Router() {
   return (
@@ -36,6 +37,7 @@ function Router() {
       <Route path="/tutorials/pagespeed-corevitalweb" component={TutorialPageSpeed} />
       <Route path="/tutorials/google-ads-ia" component={TutorialGoogleAds} />
       <Route path="/tutorials/screaming-frog-seo" component={TutorialScreamingFrog} />
+      <Route path="/tutorials/agentic-workflows" component={TutorialAgenticWorkflows} />
       <Route component={NotFound} />
     </Switch>
   );

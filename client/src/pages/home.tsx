@@ -13,6 +13,7 @@ import googleadsAdsImage from "@assets/generated_images/ai-powered_google_ads_ca
 import screamingfrogImage from "@assets/generated_images/seo_spider_crawler_analysis.png";
 import seoStrategyImage from "@assets/generated_images/seo_strategy_guide_concept.png";
 import deepseekImage from "@assets/generated_images/deepseek_ai_model_for_designers.png";
+import agenticImage from "@assets/generated_images/agentic_workflow_visualization_diagram.png";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -624,6 +625,48 @@ export default function Home() {
                     </h3>
                     <p className="text-muted-foreground line-clamp-2 text-sm">
                       La feuille de route complète pour dominer la recherche organique.
+                    </p>
+                    <div className="pt-2 flex items-center text-primary font-medium text-sm">
+                      Voir le tutoriel <ArrowRight className="ml-2 w-3 h-3 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
+
+              {/* Tutorial 5 - Agentic Workflows */}
+              <Link href="/tutorials/agentic-workflows">
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.4 }}
+                  className="group cursor-pointer h-full"
+                >
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
+                    <img 
+                      src={agenticImage} 
+                      alt="Flux Agentiques" 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="400"
+                      height="300"
+                    />
+                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
+                      IA Avancée
+                    </Badge>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span>Tutoriel</span>
+                      <span>•</span>
+                      <span>30 min</span>
+                    </div>
+                    <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
+                      Flux de Travail Agentiques Pour les Nuls
+                    </h3>
+                    <p className="text-muted-foreground line-clamp-2 text-sm">
+                      Comprendre et maîtriser les agents IA autonomes en pratique.
                     </p>
                     <div className="pt-2 flex items-center text-primary font-medium text-sm">
                       Voir le tutoriel <ArrowRight className="ml-2 w-3 h-3 transition-transform group-hover:translate-x-1" />
