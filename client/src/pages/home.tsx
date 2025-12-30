@@ -12,6 +12,7 @@ import corevitalsImage from "@assets/generated_images/core_web_vitals_optimizati
 import googleadsAdsImage from "@assets/generated_images/ai-powered_google_ads_campaigns.png";
 import screamingfrogImage from "@assets/generated_images/seo_spider_crawler_analysis.png";
 import seoStrategyImage from "@assets/generated_images/seo_strategy_guide_concept.png";
+import deepseekImage from "@assets/generated_images/deepseek_ai_model_for_designers.png";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -158,8 +159,8 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-6 gap-8">
-              {/* Article 0 - Featured */}
-              <Link href="/articles/google-pagespeed-insights">
+              {/* Featured - DeepSeek (Most Recent) */}
+              <Link href="/articles/deepseek-designers">
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -169,12 +170,95 @@ export default function Home() {
                   <div className="relative aspect-[16/10] rounded-2xl overflow-hidden mb-6 shadow-lg">
                     <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
                     <img 
-                      src={pagespeedImage} 
-                      alt="Google PageSpeed Insights" 
+                      src={deepseekImage} 
+                      alt="DeepSeek pour Designers" 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"
                       width="600"
                       height="375"
+                    />
+                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
+                      IA Design
+                    </Badge>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span>30 Déc 2025</span>
+                      <span>•</span>
+                      <span>10 min de lecture</span>
+                    </div>
+                    <h3 className="text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors">
+                      DeepSeek (R1 & V3.2) pour les Designers d'aujourd'hui
+                    </h3>
+                    <p className="text-muted-foreground line-clamp-4">
+                      DeepSeek R1 et V3.2 révolutionnent le design en 2025. Comprenez comment utiliser ces outils IA pour multiplier votre productivité sans sacrifier la qualité créative.
+                    </p>
+                    <div className="pt-2 flex items-center text-primary font-medium">
+                      Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
+
+              {/* Featured - Google Ads */}
+              <Link href="/articles/google-ads-ia-2026">
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="group cursor-pointer lg:col-span-2 lg:row-span-2"
+                >
+                  <div className="relative aspect-[16/10] rounded-2xl overflow-hidden mb-6 shadow-lg">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
+                    <img 
+                      src={googleadsImage} 
+                      alt="Google Ads et IA" 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="600"
+                      height="375"
+                    />
+                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
+                      Marketing IA
+                    </Badge>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span>23 Déc 2025</span>
+                      <span>•</span>
+                      <span>10 min de lecture</span>
+                    </div>
+                    <h3 className="text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors">
+                      L'ère de l'autonomie : Maîtriser l'IA de Google Ads en 2026
+                    </h3>
+                    <p className="text-muted-foreground line-clamp-4">
+                      Comment piloter l'IA Google Ads avec first-party data et Performance Max, tout en garantissant votre Brand Safety.
+                    </p>
+                    <div className="pt-2 flex items-center text-primary font-medium">
+                      Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
+
+              {/* Google PageSpeed - 23 Déc */}
+              <Link href="/articles/google-pagespeed-insights">
+                <motion.div 
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.1 }}
+                  className="group cursor-pointer"
+                >
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
+                    <img 
+                      src={pagespeedImage} 
+                      alt="Google PageSpeed Insights" 
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="400"
+                      height="300"
                     />
                     <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
                       SEO 2026
@@ -186,11 +270,11 @@ export default function Home() {
                       <span>•</span>
                       <span>8 min de lecture</span>
                     </div>
-                    <h3 className="text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors">
+                    <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">
                       Au-delà du score 100 : L'INP, votre priorité SEO en 2026
                     </h3>
-                    <p className="text-muted-foreground line-clamp-4">
-                      Comment optimiser votre site avec l'Interaction to Next Paint et le Green SEO. PageSpeed Insights n'est plus sur la vitesse brute, mais sur la fluidité ressentie.
+                    <p className="text-muted-foreground line-clamp-3">
+                      Comment optimiser votre site avec l'Interaction to Next Paint et le Green SEO.
                     </p>
                     <div className="pt-2 flex items-center text-primary font-medium">
                       Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -199,26 +283,27 @@ export default function Home() {
                 </motion.div>
               </Link>
 
-              {/* New Featured Article */}
+              {/* Young Talents - 01 Déc */}
               <Link href="/articles/trusted-young-talent">
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  className="group cursor-pointer lg:col-span-2 lg:row-span-2"
+                  transition={{ delay: 0.2 }}
+                  className="group cursor-pointer"
                 >
-                  <div className="relative aspect-[16/10] rounded-2xl overflow-hidden mb-6 shadow-lg">
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
                     <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
                     <img 
                       src={talentImage} 
-                      alt="Faire confiance aux jeunes développeurs" 
+                      alt="Young Talents" 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"
-                      width="600"
-                      height="375"
+                      width="400"
+                      height="300"
                     />
                     <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
-                      Ressources Humaines
+                      RH
                     </Badge>
                   </div>
                   <div className="space-y-3">
@@ -227,11 +312,11 @@ export default function Home() {
                       <span>•</span>
                       <span>8 min de lecture</span>
                     </div>
-                    <h3 className="text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors">
-                      La confiance envers les jeunes développeurs : L'atout stratégique du futur
+                    <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">
+                      La confiance envers les jeunes développeurs : L'atout stratégique
                     </h3>
-                    <p className="text-muted-foreground line-clamp-4">
-                      Pourquoi les entreprises et recruteurs doivent absolument investir dans les jeunes talents en développement web et design. Guide complet avec stratégie d'intégration.
+                    <p className="text-muted-foreground line-clamp-3">
+                      Pourquoi investir dans les jeunes talents en développement web et design.
                     </p>
                     <div className="pt-2 flex items-center text-primary font-medium">
                       Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -240,13 +325,13 @@ export default function Home() {
                 </motion.div>
               </Link>
 
-              {/* Article 1 */}
+              {/* IA 30 Min - 30 Nov */}
               <Link href="/articles/ia-30-min">
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 0.1 }}
+                  transition={{ delay: 0.3 }}
                   className="group cursor-pointer"
                 >
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
@@ -273,7 +358,7 @@ export default function Home() {
                       L'IA en 30 minutes par jour : Gagnez 10 heures par semaine
                     </h3>
                     <p className="text-muted-foreground line-clamp-3">
-                      Les 3 automatisations simples (sans coder) qui vont transformer votre productivité. Imaginez pouvoir vous libérer de 10 heures de travail répétitif chaque semaine.
+                      Les 3 automatisations simples qui vont transformer votre productivité.
                     </p>
                     <div className="pt-2 flex items-center text-primary font-medium">
                       Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -282,13 +367,13 @@ export default function Home() {
                 </motion.div>
               </Link>
 
-              {/* Article 2 */}
+              {/* Transformation Digitale - 28 Nov */}
               <Link href="/articles/digitalisation-vs-transformation">
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 0.2 }}
+                  transition={{ delay: 0.4 }}
                   className="group cursor-pointer"
                 >
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
@@ -315,7 +400,7 @@ export default function Home() {
                       Transformation Digitale : Par où commencer ?
                     </h3>
                     <p className="text-muted-foreground line-clamp-3">
-                      Oubliez les grands mots. Voici une feuille de route concrète pour digitaliser votre activité étape par étape.
+                      Une feuille de route concrète pour digitaliser votre activité étape par étape.
                     </p>
                     <div className="pt-2 flex items-center text-primary font-medium">
                       Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -324,13 +409,13 @@ export default function Home() {
                 </motion.div>
               </Link>
 
-              {/* Article 3 */}
+              {/* Vibe Coding - 25 Nov (oldest) */}
               <Link href="/articles/vibe-coding">
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 0.3 }}
+                  transition={{ delay: 0.5 }}
                   className="group cursor-pointer"
                 >
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
@@ -357,49 +442,7 @@ export default function Home() {
                       Vibe Coding : Quand l'IA donne le « La » de la Programmation
                     </h3>
                     <p className="text-muted-foreground line-clamp-3">
-                      Oubliez la tête baissée dans le code. Le Vibe Coding est la nouvelle approche où l'intuition guide la création logicielle assistée par IA.
-                    </p>
-                    <div className="pt-2 flex items-center text-primary font-medium">
-                      Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-                    </div>
-                  </div>
-                </motion.div>
-              </Link>
-
-              {/* Article 5 - New */}
-              <Link href="/articles/google-ads-ia-2026">
-                <motion.div 
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.4 }}
-                  className="group cursor-pointer"
-                >
-                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
-                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
-                    <img 
-                      src={googleadsImage} 
-                      alt="Google Ads et IA" 
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                      loading="lazy"
-                      width="400"
-                      height="300"
-                    />
-                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
-                      Marketing IA
-                    </Badge>
-                  </div>
-                  <div className="space-y-3">
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <span>23 Déc 2025</span>
-                      <span>•</span>
-                      <span>10 min de lecture</span>
-                    </div>
-                    <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">
-                      L'ère de l'autonomie : Maîtriser l'IA de Google Ads en 2026
-                    </h3>
-                    <p className="text-muted-foreground line-clamp-3">
-                      Comment piloter l'IA Google Ads avec first-party data et Performance Max, tout en garantissant votre Brand Safety.
+                      La nouvelle approche où l'intuition guide la création logicielle assistée par IA.
                     </p>
                     <div className="pt-2 flex items-center text-primary font-medium">
                       Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
