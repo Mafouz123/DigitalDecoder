@@ -14,6 +14,7 @@ import screamingfrogImage from "@assets/generated_images/seo_spider_crawler_anal
 import seoStrategyImage from "@assets/generated_images/seo_strategy_guide_concept.png";
 import deepseekImage from "@assets/generated_images/deepseek_ai_model_for_designers.png";
 import agenticImage from "@assets/generated_images/agentic_workflow_visualization_diagram.png";
+import resumeImage from "@assets/generated_images/ai_resume_optimization_process_visual.png";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -160,8 +161,8 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-6 gap-8">
-              {/* Featured - DeepSeek (Most Recent) */}
-              <Link href="/articles/deepseek-designers">
+              {/* Featured - Resume IA (Newest) */}
+              <Link href="/articles/resume-ia">
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
@@ -171,28 +172,28 @@ export default function Home() {
                   <div className="relative aspect-[16/10] rounded-2xl overflow-hidden mb-6 shadow-lg">
                     <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
                     <img 
-                      src={deepseekImage} 
-                      alt="DeepSeek pour Designers" 
+                      src={resumeImage} 
+                      alt="Optimisation CV IA" 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"
                       width="600"
                       height="375"
                     />
                     <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
-                      IA Design
+                      Carrière & IA
                     </Badge>
                   </div>
                   <div className="space-y-3">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <span>30 Déc 2025</span>
+                      <span>04 Jan 2026</span>
                       <span>•</span>
                       <span>10 min de lecture</span>
                     </div>
                     <h3 className="text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors">
-                      DeepSeek (R1 & V3.2) pour les Designers d'aujourd'hui
+                      Créer et Optimiser son CV avec l'IA : Le Guide 2026
                     </h3>
                     <p className="text-muted-foreground line-clamp-4">
-                      DeepSeek R1 et V3.2 révolutionnent le design en 2025. Comprenez comment utiliser ces outils IA pour multiplier votre productivité sans sacrifier la qualité créative.
+                      Pourquoi et comment l'intelligence artificielle est devenue votre meilleure alliée pour décrocher le job de vos rêves. Méthodes pas à pas pour un CV qui passe les robots ATS.
                     </p>
                     <div className="pt-2 flex items-center text-primary font-medium">
                       Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -201,7 +202,7 @@ export default function Home() {
                 </motion.div>
               </Link>
 
-              {/* Featured - Google Ads */}
+              {/* Featured - DeepSeek */}
               <Link href="/articles/google-ads-ia-2026">
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}

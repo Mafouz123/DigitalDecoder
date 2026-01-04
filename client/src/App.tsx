@@ -14,6 +14,7 @@ import Article4 from "@/pages/articles/trusted-young-talent";
 import Article5 from "@/pages/articles/google-pagespeed-insights";
 import Article6 from "@/pages/articles/google-ads-ia-2026";
 import Article7 from "@/pages/articles/deepseek-designers";
+import Article8 from "@/pages/articles/resume-ia";
 import TutorialSEO from "@/pages/tutorials/seo-strategy";
 import TutorialPageSpeed from "@/pages/tutorials/pagespeed-corevitalweb";
 import TutorialGoogleAds from "@/pages/tutorials/google-ads-ia";
@@ -33,6 +34,7 @@ function Router() {
       <Route path="/articles/google-pagespeed-insights" component={Article5} />
       <Route path="/articles/google-ads-ia-2026" component={Article6} />
       <Route path="/articles/deepseek-designers" component={Article7} />
+      <Route path="/articles/resume-ia" component={Article8} />
       <Route path="/tutorials/seo-strategy" component={TutorialSEO} />
       <Route path="/tutorials/pagespeed-corevitalweb" component={TutorialPageSpeed} />
       <Route path="/tutorials/google-ads-ia" component={TutorialGoogleAds} />
