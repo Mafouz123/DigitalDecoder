@@ -15,6 +15,7 @@ import seoStrategyImage from "@assets/generated_images/seo_strategy_guide_concep
 import deepseekImage from "@assets/generated_images/deepseek_ai_model_for_designers.png";
 import agenticImage from "@assets/generated_images/agentic_workflow_visualization_diagram.png";
 import resumeImage from "@assets/generated_images/ai_resume_optimization_process_visual.png";
+import agenticSEOImage from "@assets/generated_images/replit_agent_and_agentic_workflow_illustration.png";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -467,46 +468,46 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-              {/* Tutorial 1 - SEO Strategy (Oldest) */}
-              <Link href="/tutorials/seo-strategy">
+              {/* Tutorial - Agentic SEO (Newest) */}
+              <Link href="/tutorials/agentic-seo-results">
                 <motion.div 
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
                   className="group cursor-pointer h-full"
                 >
-                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md border-2 border-orange-500/20">
                     <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
                     <img 
-                      src={seoStrategyImage} 
-                      alt="Stratégie SEO" 
+                      src={agenticSEOImage} 
+                      alt="Agentic SEO" 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"
-                      width="400"
-                      height="300"
                     />
-                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
-                      Stratégie
+                    <Badge className="absolute top-4 left-4 z-20 bg-orange-600 text-white hover:bg-orange-700 backdrop-blur-md border-none">
+                      Case Study
                     </Badge>
                   </div>
                   <div className="space-y-3">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <span>01 Nov 2025</span>
+                      <span>14 Jan 2026</span>
                       <span>•</span>
-                      <span>12 min</span>
+                      <span>15 min</span>
                     </div>
                     <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
-                      Stratégie SEO Complète
+                      Replit Agent & SEO : Dominer Google Search
                     </h3>
                     <p className="text-muted-foreground line-clamp-2 text-sm">
-                      La feuille de route complète pour dominer la recherche organique.
+                      Comment j'utilise les agents IA pour atteindre mes objectifs de croissance organique.
                     </p>
                     <div className="pt-2 flex items-center text-primary font-medium text-sm">
-                      Voir le tutoriel <ArrowRight className="ml-2 w-3 h-3 transition-transform group-hover:translate-x-1" />
+                      Voir le case study <ArrowRight className="ml-2 w-3 h-3 transition-transform group-hover:translate-x-1" />
                     </div>
                   </div>
                 </motion.div>
               </Link>
+
+              {/* Tutorial 1 - SEO Strategy */}
 
               {/* Tutorial 2 - PageSpeed */}
               <Link href="/tutorials/pagespeed-corevitalweb">
