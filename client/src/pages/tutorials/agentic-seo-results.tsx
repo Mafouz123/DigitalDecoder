@@ -101,19 +101,19 @@ export default function TutorialAgenticSEO() {
               >
                 <h2 className="text-3xl font-bold mb-6">Le Résultat : Preuve par l'Image</h2>
                 <p className="text-xl leading-relaxed text-foreground/80">
-                  Comme le montre mes rapports Google Search Console récents (janvier 2026), le site a franchi la barre des <strong>10 clics organiques</strong> en moins de 28 jours. Ce n'est pas le fruit du hasard, mais d'une application rigoureuse de flux agentiques.
+                  En m'appuyant sur mon expérience de <strong>SEO Strategist & Web Designer</strong> pour le blog "Decoding Digital" en 2025, j'ai mis en place une stratégie de croissance organique qui porte ses fruits. Comme le montrent les rapports récents, le site a franchi la barre des <strong>10 clics organiques</strong> en moins de 28 jours grâce à des audits techniques rigoureux et une optimisation on-page constante.
                 </p>
                 <div className="bg-muted/30 p-6 rounded-2xl border border-primary/5 my-8">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div className="text-center p-4 bg-background rounded-xl shadow-sm">
-                      <p className="text-sm font-bold text-muted-foreground uppercase">Objectif Atteint</p>
-                      <p className="text-4xl font-bold text-orange-600">10</p>
-                      <p className="text-sm">Clics Google Search</p>
+                      <p className="text-sm font-bold text-muted-foreground uppercase">Impact Organique</p>
+                      <p className="text-4xl font-bold text-orange-600">Top 5</p>
+                      <p className="text-sm">Classement Google (3 mois)</p>
                     </div>
                     <div className="text-center p-4 bg-background rounded-xl shadow-sm">
-                      <p className="text-sm font-bold text-muted-foreground uppercase">En cours</p>
-                      <p className="text-4xl font-bold text-primary">12 / 15</p>
-                      <p className="text-sm">Prochain Palier</p>
+                      <p className="text-sm font-bold text-muted-foreground uppercase">Actuellement</p>
+                      <p className="text-4xl font-bold text-primary">10</p>
+                      <p className="text-sm">Clics réels atteints</p>
                     </div>
                   </div>
                 </div>
@@ -128,6 +128,9 @@ export default function TutorialAgenticSEO() {
                 className="space-y-8"
               >
                 <h2 className="text-3xl font-heading font-bold">Ma Méthodologie "Agent-First"</h2>
+                <p className="text-lg text-muted-foreground">
+                  Cette approche repose sur mon expertise en <strong>audits techniques SEO</strong> et en <strong>architecture web</strong> conçue pour l'engagement utilisateur.
+                </p>
                 
                 <div className="space-y-6">
                   {steps.map((step, i) => (
@@ -185,9 +188,9 @@ export default function TutorialAgenticSEO() {
                 className="prose prose-lg dark:prose-invert max-w-none border-l-4 border-orange-600 pl-6 italic"
               >
                 <p>
-                  "L'avenir du développement web ne réside pas dans l'écriture manuelle de chaque ligne, mais dans la capacité à orchestrer des agents IA pour atteindre des objectifs de business réels comme la visibilité organique."
+                  "Maillage interne stratégique et architecture web orientée conversion : c'est la clé pour transformer un simple blog en un moteur de croissance organique puissant."
                 </p>
-                <footer className="text-sm font-bold mt-2">— Sanni Mafouzou, Ingénieur Growth Web</footer>
+                <footer className="text-sm font-bold mt-2">— Sanni Mafouzou, SEO Strategist & Web Designer</footer>
               </motion.div>
 
             </div>
