@@ -1,0 +1,14 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "6g6RHI8R9L94YddgoEOj5"
+uri = "file://client/src/assets/generated_images/ai_ecommerce_pme_2026.png"
+type = "image"
+title = "AI e-commerce dashboard for SMEs"
+
+[[generated]]
+id = "lEWxDzkZQgQrgAAG4ToxX"
+uri = "file://client/src/assets/generated_images/nocode_lowcode_guide_2026.png"
+type = "image"
+title = "No-code low-code visual builder"

@@ -15,6 +15,8 @@ import Article5 from "@/pages/articles/google-pagespeed-insights";
 import Article6 from "@/pages/articles/google-ads-ia-2026";
 import Article7 from "@/pages/articles/deepseek-designers";
 import Article8 from "@/pages/articles/resume-ia";
+import Article9 from "@/pages/articles/ai-ecommerce-pme";
+import Article10 from "@/pages/articles/nocode-lowcode-guide";
 import TutorialSEO from "@/pages/tutorials/seo-strategy";
 import TutorialPageSpeed from "@/pages/tutorials/pagespeed-corevitalweb";
 import TutorialGoogleAds from "@/pages/tutorials/google-ads-ia";
@@ -36,6 +38,8 @@ function Router() {
       <Route path="/articles/google-ads-ia-2026" component={Article6} />
       <Route path="/articles/deepseek-designers" component={Article7} />
       <Route path="/articles/resume-ia" component={Article8} />
+      <Route path="/articles/ai-ecommerce-pme" component={Article9} />
+      <Route path="/articles/nocode-lowcode-guide" component={Article10} />
       <Route path="/tutorials/seo-strategy" component={TutorialSEO} />
       <Route path="/tutorials/pagespeed-corevitalweb" component={TutorialPageSpeed} />
       <Route path="/tutorials/google-ads-ia" component={TutorialGoogleAds} />

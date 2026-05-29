@@ -16,6 +16,8 @@ import deepseekImage from "@assets/generated_images/deepseek_ai_model_for_design
 import agenticImage from "@assets/generated_images/agentic_workflow_visualization_diagram.png";
 import resumeImage from "@assets/generated_images/ai_resume_optimization_process_visual.png";
 import agenticSEOImage from "@assets/generated_images/replit_agent_and_agentic_workflow_illustration.png";
+import ecommerceImage from "@assets/generated_images/ai_ecommerce_pme_2026.png";
+import nocodeImage from "@assets/generated_images/nocode_lowcode_guide_2026.png";
 
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -370,9 +372,9 @@ export default function Home() {
                 </motion.div>
               </Link>
 
-              {/* Transformation Digitale - 28 Nov */}
-              <Link href="/articles/digitalisation-vs-transformation">
-                <motion.div 
+              {/* IA E-commerce PME - 29 Mai 2026 (Newest) */}
+              <Link href="/articles/ai-ecommerce-pme">
+                <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
@@ -381,29 +383,29 @@ export default function Home() {
                 >
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
                     <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
-                    <img 
-                      src={strategyImage} 
-                      alt="Transformation Digitale" 
+                    <img
+                      src={ecommerceImage}
+                      alt="IA E-commerce PME"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"
                       width="400"
                       height="300"
                     />
                     <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
-                      Stratégie
+                      E-commerce
                     </Badge>
                   </div>
                   <div className="space-y-3">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <span>28 Nov 2025</span>
+                      <span>29 Mai 2026</span>
                       <span>•</span>
-                      <span>7 min de lecture</span>
+                      <span>10 min de lecture</span>
                     </div>
                     <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">
-                      Transformation Digitale : Par où commencer ?
+                      L'IA dans l'E-commerce : Comment les PME doublent leurs ventes
                     </h3>
                     <p className="text-muted-foreground line-clamp-3">
-                      Une feuille de route concrète pour digitaliser votre activité étape par étape.
+                      Les 5 leviers IA pour transformer votre boutique en machine de vente performante.
                     </p>
                     <div className="pt-2 flex items-center text-primary font-medium">
                       Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -412,9 +414,9 @@ export default function Home() {
                 </motion.div>
               </Link>
 
-              {/* Vibe Coding - 25 Nov (oldest) */}
-              <Link href="/articles/vibe-coding">
-                <motion.div 
+              {/* No-Code Low-Code - 29 Mai 2026 (Newest) */}
+              <Link href="/articles/nocode-lowcode-guide">
+                <motion.div
                   initial={{ opacity: 0, scale: 0.95 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
@@ -423,29 +425,29 @@ export default function Home() {
                 >
                   <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md">
                     <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
-                    <img 
-                      src={uxImage} 
-                      alt="Vibe Coding" 
+                    <img
+                      src={nocodeImage}
+                      alt="No-Code Low-Code Guide"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"
                       width="400"
                       height="300"
                     />
                     <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
-                      Tendance
+                      Développement
                     </Badge>
                   </div>
                   <div className="space-y-3">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <span>25 Nov 2025</span>
+                      <span>29 Mai 2026</span>
                       <span>•</span>
-                      <span>4 min de lecture</span>
+                      <span>10 min de lecture</span>
                     </div>
                     <h3 className="text-2xl font-bold group-hover:text-primary transition-colors">
-                      Vibe Coding : Quand l'IA donne le « La » de la Programmation
+                      No-Code & Low-Code : Créer des apps sans coder — Le Guide 2026
                     </h3>
                     <p className="text-muted-foreground line-clamp-3">
-                      La nouvelle approche où l'intuition guide la création logicielle assistée par IA.
+                      De l'idée à l'app en 30 jours : les outils, la roadmap et les pièges à éviter.
                     </p>
                     <div className="pt-2 flex items-center text-primary font-medium">
                       Lire l'article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -712,7 +714,7 @@ export default function Home() {
           <Separator className="mb-8" />
           
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-            <p>© 2025 Décoder le digital. Tous droits réservés.</p>
+            <p>© 2026 Décoder le digital. Tous droits réservés.</p>
             <div className="flex gap-6">
               <a href="https://wa.me/22991177723" target="_blank" rel="noopener noreferrer" className="hover:text-primary">WhatsApp</a>
               <a href="https://www.linkedin.com/in/mafouz-sanni-98704b393?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" rel="noopener noreferrer" className="hover:text-primary">LinkedIn</a>
