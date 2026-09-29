@@ -663,12 +663,12 @@ export default function Article4() {
                   <CardTitle className="text-lg">Partager cet article</CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-2">
-                  <a href={`https://www.linkedin.com/sharing/share-offsite/?url=https://digital-decoder--mafouzsanny.replit.app/articles/trusted-young-talent`} target="_blank" rel="noopener noreferrer" data-testid="link-share-linkedin">
+                  <a href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`} target="_blank" rel="noopener noreferrer" data-testid="link-share-linkedin">
                     <Button variant="outline" className="w-full justify-center gap-2 cursor-pointer">
                       🔗 LinkedIn
                     </Button>
                   </a>
-                  <a href={`https://wa.me/?text=Découvrez cet article sur les jeunes talents en tech: https://digital-decoder--mafouzsanny.replit.app/articles/trusted-young-talent`} target="_blank" rel="noopener noreferrer" data-testid="link-share-whatsapp">
+                  <a href={`https://wa.me/?text=${encodeURIComponent(`Découvrez cet article sur les jeunes talents en tech : ${window.location.href}`)}`} target="_blank" rel="noopener noreferrer" data-testid="link-share-whatsapp">
                     <Button variant="outline" className="w-full justify-center gap-2 cursor-pointer">
                       💬 WhatsApp
                     </Button>

@@ -3,7 +3,5 @@ Allow: /
 Disallow: /admin
 Disallow: /private
 
-Sitemap: https://décoder-le-digital.replit.dev/sitemap.xml
-
 # Crawl delay (in seconds) - respectful crawling
 Crawl-delay: 1

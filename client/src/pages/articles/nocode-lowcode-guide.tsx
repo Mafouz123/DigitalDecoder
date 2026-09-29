@@ -153,7 +153,7 @@ export default function ArticleNoCodeLowCode() {
                           <li>• <strong>FlutterFlow</strong> — Apps mobiles (iOS/Android)</li>
                           <li>• <strong>Retool</strong> — Outils internes d'entreprise</li>
                           <li>• <strong>OutSystems</strong> — Apps enterprise</li>
-                          <li>• <strong>Replit Agent</strong> — Prototypage rapide</li>
+                          <li>• <strong>Bolt.new</strong> — Prototypage rapide</li>
                         </ul>
                       </div>
                     </CardContent>
@@ -166,7 +166,7 @@ export default function ArticleNoCodeLowCode() {
                     Vibe Coding : Le cousin proche
                   </h3>
                   <p className="text-amber-800 dark:text-amber-200">
-                    Le <strong>Vibe Coding</strong> (que nous avons déjà couvert dans un article précédent) est une forme de Low-Code où vous décrivez ce que vous voulez en langage naturel, et l'IA (comme Replit Agent, Cursor, ou GitHub Copilot) génère le code. C'est le futur du développement assisté.
+                    Le <strong>Vibe Coding</strong> (que nous avons déjà couvert dans un article précédent) est une forme de Low-Code où vous décrivez ce que vous voulez en langage naturel, et l'IA (comme Cursor ou GitHub Copilot) génère le code. C'est le futur du développement assisté.
                   </p>
                 </div>
               </motion.section>
