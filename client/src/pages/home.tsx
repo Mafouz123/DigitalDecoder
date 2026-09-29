@@ -164,6 +164,48 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-6 gap-8">
+              {/* Featured - RAG & MongoDB */}
+              <Link href="/articles/rag-mongodb-assistant">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="group cursor-pointer lg:col-span-2 lg:row-span-2"
+                >
+                  <div className="relative aspect-[16/10] rounded-2xl overflow-hidden mb-6 shadow-lg">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
+                    <img
+                      src={aiImage}
+                      alt="Illustration d’un assistant d’intelligence artificielle"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="600"
+                      height="375"
+                    />
+                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
+                      RAG & MongoDB
+                    </Badge>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span>30 sept. 2026</span>
+                      <span>•</span>
+                      <span>8 min de lecture</span>
+                    </div>
+                    <h3 className="text-2xl lg:text-3xl font-bold group-hover:text-primary transition-colors">
+                      Un PDF, une question, une réponse : comprendre le RAG avec MongoDB
+                    </h3>
+                    <p className="text-muted-foreground line-clamp-4">
+                      Dans les coulisses d’un assistant documentaire : découpage, embeddings,
+                      recherche vectorielle et génération avec Groq.
+                    </p>
+                    <div className="pt-2 flex items-center text-primary font-medium">
+                      Lire l’article <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
+
               {/* Featured - Resume IA (Newest) */}
               <Link href="/articles/resume-ia">
                 <motion.div 
@@ -470,6 +512,47 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {/* Tutorial - MongoDB RAG */}
+              <Link href="/tutorials/rag-mongodb-guide">
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="group cursor-pointer h-full"
+                >
+                  <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-6 shadow-md border-2 border-primary/20">
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors z-10"></div>
+                    <img
+                      src={aiImage}
+                      alt="Assistant RAG et recherche dans des documents"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      loading="lazy"
+                      width="400"
+                      height="300"
+                    />
+                    <Badge className="absolute top-4 left-4 z-20 bg-white/90 text-black hover:bg-white backdrop-blur-md border-none">
+                      IA & bases vectorielles
+                    </Badge>
+                  </div>
+                  <div className="space-y-3">
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <span>30 sept. 2026</span>
+                      <span>•</span>
+                      <span>30 min</span>
+                    </div>
+                    <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
+                      Construire un assistant PDF RAG avec MongoDB Atlas
+                    </h3>
+                    <p className="text-muted-foreground line-clamp-2 text-sm">
+                      Installation, clés API, index vectoriel et dépannage pour débutants.
+                    </p>
+                    <div className="pt-2 flex items-center text-primary font-medium text-sm">
+                      Voir le tutoriel <ArrowRight className="ml-2 w-3 h-3 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
+
               {/* Tutorial - Agentic SEO (Newest) */}
               <Link href="/tutorials/agentic-seo-results">
                 <motion.div 

@@ -17,12 +17,14 @@ import Article7 from "@/pages/articles/deepseek-designers";
 import Article8 from "@/pages/articles/resume-ia";
 import Article9 from "@/pages/articles/ai-ecommerce-pme";
 import Article10 from "@/pages/articles/nocode-lowcode-guide";
+import ArticleRAGMongoDB from "@/pages/articles/rag-mongodb-assistant";
 import TutorialSEO from "@/pages/tutorials/seo-strategy";
 import TutorialPageSpeed from "@/pages/tutorials/pagespeed-corevitalweb";
 import TutorialGoogleAds from "@/pages/tutorials/google-ads-ia";
 import TutorialScreamingFrog from "@/pages/tutorials/screaming-frog-seo";
 import TutorialAgenticWorkflows from "@/pages/tutorials/agentic-workflows";
 import TutorialAgenticSEO from "@/pages/tutorials/agentic-seo-results";
+import TutorialRAGMongoDB from "@/pages/tutorials/rag-mongodb-guide";
 
 function Router() {
   return (
@@ -40,12 +42,14 @@ function Router() {
       <Route path="/articles/resume-ia" component={Article8} />
       <Route path="/articles/ai-ecommerce-pme" component={Article9} />
       <Route path="/articles/nocode-lowcode-guide" component={Article10} />
+      <Route path="/articles/rag-mongodb-assistant" component={ArticleRAGMongoDB} />
       <Route path="/tutorials/seo-strategy" component={TutorialSEO} />
       <Route path="/tutorials/pagespeed-corevitalweb" component={TutorialPageSpeed} />
       <Route path="/tutorials/google-ads-ia" component={TutorialGoogleAds} />
       <Route path="/tutorials/screaming-frog-seo" component={TutorialScreamingFrog} />
       <Route path="/tutorials/agentic-workflows" component={TutorialAgenticWorkflows} />
       <Route path="/tutorials/agentic-seo-results" component={TutorialAgenticSEO} />
+      <Route path="/tutorials/rag-mongodb-guide" component={TutorialRAGMongoDB} />
       <Route component={NotFound} />
     </Switch>
   );
