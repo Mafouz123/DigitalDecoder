@@ -17,7 +17,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 
 const credlyUrl = "https://www.credly.com/users/sanni-mafouz";
-const portfolioUrl = "https://github.com/Mafouz123/Portefolio";
+const portfolioUrl = "https://mafouz123.github.io/Portefolio/";
 
 const credentials = [
   {
@@ -197,7 +197,7 @@ export default function About() {
                       className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl border border-border bg-background px-5 font-semibold transition hover:border-primary/40 hover:text-primary"
                     >
                       <Github className="h-5 w-5" />
-                      Portfolio GitHub
+                      Voir le portfolio
                       <ArrowUpRight className="h-4 w-4" />
                     </a>
                   </div>
