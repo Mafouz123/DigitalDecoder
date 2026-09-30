@@ -1,0 +1,1 @@
+- [GitHub workspace sync](github-sync.md) — GitHub API access does not itself enable Git CLI or Replit Git-pane auto-sync.
