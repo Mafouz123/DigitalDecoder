@@ -15,7 +15,7 @@ import seoStrategyImage from "@assets/generated_images/seo_strategy_guide_concep
 import deepseekImage from "@assets/generated_images/deepseek_ai_model_for_designers.png";
 import agenticImage from "@assets/generated_images/agentic_workflow_visualization_diagram.png";
 import resumeImage from "@assets/generated_images/ai_resume_optimization_process_visual.png";
-import agenticSEOImage from "@assets/generated_images/replit_agent_and_agentic_workflow_illustration.png";
+import agenticSEOImage from "@assets/generated_images/agentic_workflow_visualization_diagram.png";
 import ecommerceImage from "@assets/generated_images/ai_ecommerce_pme_2026.png";
 import nocodeImage from "@assets/generated_images/nocode_lowcode_guide_2026.png";
 
@@ -580,7 +580,7 @@ export default function Home() {
                       <span>15 min</span>
                     </div>
                     <h3 className="text-xl font-bold group-hover:text-primary transition-colors">
-                      Replit Agent & SEO : Dominer Google Search
+                      Agents IA & SEO : Dominer Google Search
                     </h3>
                     <p className="text-muted-foreground line-clamp-2 text-sm">
                       Comment j'utilise les agents IA pour atteindre mes objectifs de croissance organique.

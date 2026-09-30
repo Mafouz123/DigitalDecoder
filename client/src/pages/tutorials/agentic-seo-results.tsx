@@ -4,7 +4,7 @@ import { Clock, User, Tag, Sparkles, Brain, Target, CheckCircle2, ArrowRight, Za
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import tutorialHero from "@assets/generated_images/replit_agent_and_agentic_workflow_illustration.png";
+import tutorialHero from "@assets/generated_images/agentic_workflow_visualization_diagram.png";
 
 export default function TutorialAgenticSEO() {
   const fadeIn = {
@@ -16,7 +16,7 @@ export default function TutorialAgenticSEO() {
   const steps = [
     {
       title: "Définition de l'Objectif (Vision)",
-      desc: "Tout commence par une intention claire. J'utilise Replit Agent pour transformer ma vision ('Créer un blog SEO ultra-performant') en une structure technique concrète.",
+      desc: "Tout commence par une intention claire. Un agent IA transforme la vision ('Créer un blog SEO ultra-performant') en une structure technique concrète.",
       icon: Target
     },
     {
@@ -40,7 +40,7 @@ export default function TutorialAgenticSEO() {
         <section className="w-full overflow-hidden bg-background border-b border-primary/5">
           <img 
             src={tutorialHero} 
-            alt="Flux Agentique & Replit Agent" 
+            alt="Flux agentique et intelligence artificielle"
             className="w-full h-auto object-contain max-h-[60vh]"
             fetchPriority="high"
           />
@@ -61,7 +61,7 @@ export default function TutorialAgenticSEO() {
               </div>
               
               <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground leading-tight">
-                Comment j'utilise Replit Agent & les Flux Agentiques <br className="hidden md:block" />
+                Comment utiliser les agents IA et les flux agentiques <br className="hidden md:block" />
                 pour dominer Google Search
               </h1>
               
@@ -159,10 +159,10 @@ export default function TutorialAgenticSEO() {
               >
                 <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
                   <Rocket className="w-6 h-6 text-primary" />
-                  Le rôle de Replit Agent
+                  Le rôle d'un agent IA
                 </h3>
                 <p className="mb-6">
-                  Replit Agent n'est pas qu'un outil de code, c'est un <strong>partenaire de flux</strong>. Voici comment je le sollicite :
+                  Un agent IA n'est pas qu'un outil de code, c'est un <strong>partenaire de flux</strong>. Voici comment l'intégrer à une méthode de travail :
                 </p>
                 <div className="grid gap-4">
                   <div className="flex items-start gap-3">
@@ -211,7 +211,7 @@ export default function TutorialAgenticSEO() {
                   </div>
                   <Separator />
                   <div>
-                    <p className="font-bold text-foreground">Replit Agent</p>
+                    <p className="font-bold text-foreground">Agent IA</p>
                     <p className="text-muted-foreground">IA capable de comprendre, écrire et déployer des applications complexes.</p>
                   </div>
                   <Separator />
